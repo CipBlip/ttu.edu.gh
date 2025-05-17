@@ -1,8 +1,5 @@
-:root {
-  --primary-color: #3498db;
-}
-
-.main-nav {
+.nav-list {
   display: flex;
   gap: 1rem;
+  list-style: none;
 }
