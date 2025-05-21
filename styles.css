@@ -3,3 +3,8 @@
   gap: 1rem;
   list-style: none;
 }
+
+.student-info {
+  display: flex;
+  gap: 10px;
+}
