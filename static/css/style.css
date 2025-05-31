@@ -1,0 +1,38 @@
+:root {
+  --color-blue-deep: #1a337e;
+  --color-accent-blue: #1a337ebd;
+  --color-yellow-bright: #fdf302;
+  --color-redish: #db301b;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+}
+.contact {
+  display: flex;
+  background-color: var(--color-accent-blue);
+  padding: 8px;
+  gap: 5px;
+}
+.contact a {
+  text-decoration: none;
+  color: #fff;
+}
+nav {
+  display: flex;
+  padding: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--color-blue-deep);
+}
+nav button {
+  border-radius: 30px;
+  justify-content: right;
+}
+
+.service {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
