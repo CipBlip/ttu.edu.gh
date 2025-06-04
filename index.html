@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en_US">
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +7,24 @@
       name="description"
       content="Welcome to the Premier Technical University in Ghana, Takoradi Technical University. We are committed to providing you with quality technical tertiary education through full-time courses in engineering, commerce, science, technology, applied arts, and social sciences."
     />
+    <meta property="og:title" content="Takoradi Technical University" />
+    <meta
+      property="og:description"
+      content="Welcome to the Premier Technical University in Ghana, Takoradi Technical University. We are committed to providing you with quality technical tertiary education through full-time courses in engineering, commerce, science, technology, applied arts, and social sciences."
+    />
+    <meta property="og:image" content="static/media/logo-social.png" />
     <link rel="icon" href="static/media/favicon.png" />
-    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>TTU - Takoradi Technical University</title>
   </head>
   <body>
     <header>
-      <section class="contact">
+      <div class="contact">
         <div>
           <a href="tel:+233257710695">0257710695</a>
           <a href="tel:+233506024700">0506024700</a>
@@ -22,31 +33,42 @@
             >academicaffairs@ttu.edu.gh</a
           >
         </div>
-        <div>socials</div>
-      </section>
+        <div>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
       <nav>
         <img src="" alt=" " />
-        <ul>
-          <img src="" alt=" " />
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Academics</a>
-          <a href="">Admissions</a>
-          <a href="">Research</a>
-          <a href="">Library</a>
-          <a href="">Students</a>
-          <a href="">Staff</a>
-        </ul>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Academics</a>
+        <a href="">Admissions</a>
+        <a href="">Research</a>
+        <a href="">Library</a>
+        <a href="">Students</a>
+        <a href="">Staff</a>
         <button>Apply Now</button>
       </nav>
     </header>
     <main>
-      <div>
+      <video
+        src="https://ttu.edu.gh/wp-content/uploads/2024/09/TTU-WEB-1.mp4"
+        controls
+        muted
+        <!-- loop -->
+        <!-- autoplay -->
+        preload="auto"
+        type="video/mp4"
+      ></video>
+
+      <div class="welcome">
         <h1>Welcome to Takoradi Technical University</h1>
         <p>The Best Technical University In Ghana</p>
       </div>
 
-      <section class="service">
+      <div class="service">
         <div>
           <img src="" alt="" />
           <p>Library Databases</p>
@@ -63,15 +85,15 @@
           <img src="" alt="" />
           <p>International Students</p>
         </div>
-      </section>
+      </div>
 
-      <section class="news">
+      <div class="news">
         <p>TTU NEWS</p>
         <h3>Latest News &amp; Events</h3>
         <button>READ MORE</button>
-      </section>
+      </div>
 
-      <section class="about">
+      <div class="about">
         <div>
           <img src="" alt="" />
           <h3>ABOUT OUR UNIVERSITY</h3>
@@ -95,7 +117,7 @@
           </p>
           <a href="">Read More</a>
         </div>
-      </section>
+      </div>
 
       <div>
         <img src="" alt="" />
@@ -111,7 +133,7 @@
         <p>Graduation</p>
       </div>
 
-      <section>
+      <div>
         <div>
           <p>Take A Look At Our</p>
           <h3>New Faculties</h3>
@@ -142,10 +164,10 @@
         </div>
 
         <a href="">View all Programmes</a>
-      </section>
+      </div>
     </main>
     <footer>
-      <section>
+      <div>
         <div>
           <img src="" alt="" />
           <p>Subscribe to Newsletter</p>
@@ -156,9 +178,9 @@
             <button type="submit">SUBMIT</button>
           </form>
         </div>
-      </section>
+      </div>
 
-      <section>
+      <div>
         <div>
           <img src="" alt="" />
           <p>
@@ -198,7 +220,7 @@
         <div>
           <p>Recent News</p>
         </div>
-      </section>
+      </div>
       <p>&copy; 2024 Takoradi Technical University</p>
       <div>
         <img src="" alt="" />
