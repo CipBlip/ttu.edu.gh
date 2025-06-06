@@ -8,17 +8,34 @@
 body {
   margin: 0;
   background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  max-width: 1024px;
 }
 
 /* Header */
-.contact {
+.socials {
   display: flex;
-  background-color: var(--color-accent-blue);
-  padding: 10px;
-  gap: 20em;
-  justify-content: center;
+  background-color: var(--color-blue-deep);
+  border-bottom: 1px solid var(--color-yellow-bright);
+  gap: 20rem;
+}
+.contact {
+  list-style: none;
+  display: flex;
+  gap: 5px;
 }
 .contact a {
+  text-decoration: none;
   color: #fff;
+}
+.contact a:hover {
+  color: var(--color-yellow-bright);
+}
+.nav-bar {
+  display: flex;
+  gap: 30%;
+}
+nav a {
   text-decoration: none;
 }
