@@ -10,32 +10,31 @@ body {
   background-color: #fff;
   color: #333;
   font-size: 16px;
-  max-width: 1024px;
-}
-
-/* Header */
-.socials {
-  display: flex;
-  background-color: var(--color-blue-deep);
-  border-bottom: 1px solid var(--color-yellow-bright);
-  gap: 20rem;
 }
 .contact {
+  background-color: var(--color-accent-blue);
+  display: flex;
+}
+.links {
   list-style: none;
   display: flex;
   gap: 5px;
 }
-.contact a {
-  text-decoration: none;
+.links a {
   color: #fff;
-}
-.contact a:hover {
-  color: var(--color-yellow-bright);
-}
-.nav-bar {
-  display: flex;
-  gap: 30%;
-}
-nav a {
   text-decoration: none;
+}
+.navbar {
+  display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+.navbar > button {
+  border-radius: 24px;
+  border: 2px solid;
 }

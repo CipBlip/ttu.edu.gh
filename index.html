@@ -23,8 +23,8 @@
   </head>
   <body>
     <header>
-      <div class="socials">
-        <ul class="contact">
+      <div class="contact">
+        <ul class="links">
           <li><a href="tel:+233257710695">0257710695</a></li>
           <li><a href="tel:+233506024700">0506024700</a></li>
           <li><a href="mailto:info@ttu.edu.gh">info@ttu.edu.gh</a></li>
@@ -34,7 +34,8 @@
             >
           </li>
         </ul>
-        <ul class="contact">
+
+        <ul class="links">
           <li>
             <a href="https://web.facebook.com/officialttu/"
               ><i class="fab fa-facebook"></i
@@ -52,56 +53,76 @@
           </li>
         </ul>
       </div>
-      <div class="nav-bar">
+
+      <div class="navbar">
         <img
           src="static/media/ttu-logo-1024x466.png"
           alt=" "
-          height="40"
-          width="88"
+          height="128"
+          width="282"
         />
         <nav>
-          <!-- <img src="" alt=" " /> -->
-          <a href="/">Home</a>
-          <a href="">About</a>
-          <a href="">Academics</a>
-          <a href="">Admissions</a>
-          <a href="">Research</a>
-          <a href="">Library</a>
-          <a href="">Students</a>
-          <a href="">Staff</a>
+          <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Academics</a></li>
+            <li><a href="">Admissions</a></li>
+            <li><a href="">Research</a></li>
+            <li><a href="">Library</a></li>
+            <li><a href="">Students</a></li>
+            <li><a href="">Staff</a></li>
+          </ul>
         </nav>
-        <button>Apply Now</button>
+
+        <!-- <button>Apply Now</button> -->
       </div>
     </header>
     <main>
-      <video
-        src="https://ttu.edu.gh/wp-content/uploads/2024/09/TTU-WEB-1.mp4"
-        controls
-        muted
-        preload="auto"
-        type="video/mp4"
-      ></video>
+      <div class="video-container">
+        <video
+          src="https://ttu.edu.gh/wp-content/uploads/2024/09/TTU-WEB-1.mp4"
+          muted
+          <!-- autoplay -->
+          preload="auto"
+          type="video/mp4"
+        ></video>
 
-      <div class="welcome">
-        <h1>Welcome to Takoradi Technical University</h1>
-        <p>The Best Technical University In Ghana</p>
+        <div class="overlay-text">
+          <h1>Welcome to Takoradi Technical University</h1>
+          <p>The Best Technical University In Ghana</p>
+        </div>
       </div>
 
       <div class="service">
         <div>
-          <img src="" alt="" />
+          <img src="static/media/books-1.png" alt="" width="128" height="128" />
           <p>Library Databases</p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img
+            src="static/media/student-profile.png"
+            alt=""
+            width="128"
+            height="128"
+          />
           <p>Students Portal</p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img
+            src="static/media/006-sport-centre.png"
+            alt=""
+            width="128"
+            height="128"
+          />
           <p>Sports</p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img
+            src="static/media/planet-earth.png"
+            alt=""
+            width="128"
+            height="128"
+          />
           <p>International Students</p>
         </div>
       </div>
@@ -114,10 +135,15 @@
 
       <div class="about">
         <div>
-          <img src="" alt="" />
-          <h3>ABOUT OUR UNIVERSITY</h3>
+          <img
+            src="static/media/logo-1-1024x362.png"
+            alt=""
+            height="128"
+            width="282"
+          />
         </div>
         <div>
+          <h3>ABOUT OUR UNIVERSITY</h3>
           <p>
             The Takoradi Technical University was established in September,
             2016, as a result of the government’s policy to convert Takoradi
@@ -139,7 +165,7 @@
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img src="static/media/school-1.png" alt="" />
         <p>Graduate School</p>
 
         <img src="" alt="" />
