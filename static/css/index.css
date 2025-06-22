@@ -1,0 +1,61 @@
+/* Styling for homepage */
+@import url("styles.css");
+
+.video-container {
+  position: relative;
+}
+video {
+  width: 100%;
+}
+.overlay-text {
+  position: absolute;
+  color: #fff;
+  background: rgb(0 0 0 / 50%);
+  text-align: center;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 7px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  box-shadow: 0 0 7px #333;
+  border-radius: 7px;
+  padding: 20px;
+}
+.about {
+  display: flex;
+  gap: 20px;
+  background: var(--color-blue-deep);
+  color: #fff;
+}
+.about + div {
+  background: var(--color-blue-deep);
+  color: #fff;
+  display: flex;
+}
+.about h2,
+.about a {
+  color: var(--color-yellow-bright);
+  text-decoration: none;
+}
+.faculties {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.faculties div {
+  border-radius: 3px;
+  padding: 20px;
+  outline: 0.5px solid #333;
+}
+.faculties div:hover {
+  box-shadow: 0 0 10px #333;
+}
