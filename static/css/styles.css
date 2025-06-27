@@ -8,11 +8,16 @@
   --color-yellow-bright: #fdf302;
   --color-redish: #db301b;
 }
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+body {
   background-color: #fff;
   color: #333;
   font-family: Poppins, sans-sherif;
+  width: 100%; 
 }
 header {
   position: relative;
@@ -43,6 +48,7 @@ header {
   color: var(--color-yellow-bright);
 }
 .navbar {
+  display: flex;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -50,7 +56,12 @@ header {
   justify-content: space-between;
   padding-inline: 65px;
 }
-nav a {
+.nav-links {
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+nav li a {
   color: var(--color-blue-deep);
   text-decoration: none;
   font-size: 13px;
@@ -63,10 +74,20 @@ nav a:hover {
   display: block;
   width: max-content;
 }
-.dropdown {
+.dropdown:hover .dropdown-menu {
   display: flex;
+}
+.dropdown-menu {
+  display: none;
   flex-wrap: wrap;
-  /* position: absolute; */
+  flex-direction: column;
+  height: 365px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff8;
+}
+.dropdown div {
+  padding: 15px;
 }
 .apply-btn {
   border-radius: 24px;
@@ -74,8 +95,8 @@ nav a:hover {
   flex-shrink: 0;
   color: var(--color-blue-deep);
   background: #fff;
-  padding: 3px 6px;
   font-size: 14px;
+  padding: 6px 12px;
   font-weight: 400;
 }
 .apply-btn:hover {
