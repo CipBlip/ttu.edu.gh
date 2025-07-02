@@ -22,14 +22,23 @@ video {
   align-items: center;
 }
 .service {
-  width: 60%;
+  width: 80%;
   margin: auto;
   display: flex;
   gap: 20px;
-  justify-content: space-evenly;
-  box-shadow: 0 0 7px #333;
-  border-radius: 7px;
-  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 25px #0003;
+  border-radius: 20px 20px 0 0;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+  margin-top: -90px;
+  background-color: #fff;
+}
+.service div:hover {
+  transition: 0.3s ease;
+  transform: translateY(-5px);
 }
 .about {
   display: flex;
