@@ -8,7 +8,9 @@
   --color-yellow-bright: #fdf302;
   --color-redish: #db301b;
 }
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,11 +18,12 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: Poppins, sans-sherif;
   width: 100%;
+  font-family: Poppins, sans-sherif;
 }
-header {
-  position: relative;
+button,
+input {
+  font-family: Poppins, sans-sherif;
 }
 .top-bar {
   display: flex;
@@ -54,7 +57,7 @@ header {
   z-index: 1000;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 65px;
+  padding: 6px 65px;
   background-color: #fff;
 }
 .nav-links {
@@ -92,6 +95,12 @@ nav a:hover {
 .dropdown div {
   padding: 15px;
 }
+.menu-toggle {
+  display: none;
+  padding: 5px;
+  color: var(--color-blue-deep);
+  border-radius: 5px;
+}
 .apply-btn {
   border-radius: 24px;
   border: 2px solid var(--color-blue-deep);
@@ -99,8 +108,9 @@ nav a:hover {
   color: var(--color-blue-deep);
   background: #fff;
   font-size: 14px;
-  padding: 6px 12px;
-  font-weight: 400;
+  padding: 3px 6px;
+  font-weight: 600;
+  cursor: pointer;
 }
 .apply-btn:hover {
   color: #fff;

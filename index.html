@@ -1,7 +1,10 @@
+<!doctype html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=1024" />
+
     <meta
       name="description"
       content="Welcome to the Premier Technical University in Ghana, Takoradi Technical University. We are committed to providing you with quality technical tertiary education through full-time courses in engineering, commerce, science, technology, applied arts, and social sciences."
@@ -18,6 +21,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="stylesheet" type="text/css" href="responsive.css" />
+
     <title>TTU - Takoradi Technical University</title>
   </head>
   <body>
@@ -34,13 +39,13 @@
 
         <div class="contact-info">
           <a href="https://facebook.com/officialttu/"
-            ><i class="fa-brands fa-facebook"></i
+            ><span class="fa-brands fa-facebook"></span
           ></a>
           <a href="https://x.com/OfficialTTU"
-            ><i class="fa-brands fa-x-twitter"></i
+            ><span class="fa-brands fa-x-twitter"></span
           ></a>
           <a href="https://youtube.com/@ttutv1136"
-            ><i class="fa-brands fa-youtube"></i
+            ><span class="fa-brands fa-youtube"></span
           ></a>
         </div>
       </div>
@@ -51,8 +56,9 @@
           src="static/media/ttu-logo-1024x466.png"
           alt=""
           height="59"
-          width="129"
+          style="margin-bottom: -25px"
       /></a>
+
       <nav>
         <ul class="nav-links">
           <li><a href="">Home</a></li>
@@ -109,31 +115,9 @@
             <a href="">Academics <i class="fa-solid fa-chevron-down"></i></a>
             <div class="dropdown-menu">
               <div>
-                <a><h3>Faculties</h3></a>
-                <a>Faculty of Applied Arts and Technology</a>
-                <a>Faculty of Applied Sciences</a>
-                <a>Faculty of Business and Management Studies</a>
-                <a>Faculty of Built Environment</a>
-                <a>Faculty of Engineering</a>
-                <a>Faculty of Health and Allied Sciences</a>
-                <a>Faculty of Maritime and Nautical Studies</a>
-              </div>
-              <div>
-                <a><h3>Departments & Programmes</h3></a>
                 <a>All Academic Departments</a>
                 <a>School Graduate Studies</a>
-              </div>
-              <div>
-                <a><h3>Academic Calendar</h3></a>
                 <a>Academic Calendars</a>
-              </div>
-              <div>
-                <a><h3>Centers and Institute</h3></a>
-                <a>Jubilee Technical and Training Center</a>
-                <a>Center for Business Development and Entrepreneurship</a>
-                <a>Center for Languages and Liberal Studies</a>
-                <a>Center for Gender and Advocacy</a>
-                <a>Institute of Distance and Continuing Education</a>
               </div>
             </div>
           </li>
@@ -190,6 +174,9 @@
         </ul>
       </nav>
 
+      <button class="menu-toggle">
+        <span class="fa-solid fa-bars"></span>
+      </button>
       <a href=""><button class="apply-btn">Apply Now</button></a>
     </div>
 
@@ -201,7 +188,6 @@
           autoplay
           loop
           preload="auto"
-          type="video/mp4"
         ></video>
 
         <div class="overlay-text">
@@ -212,41 +198,78 @@
 
       <div class="service">
         <div>
-          <img src="static/media/books-1.png" alt="" width="64" height="64" />
-          <p>Library Databases</p>
+          <img
+            src="static/media/books-1.png"
+            alt=""
+            width="40"
+            style="margin-bottom: 5px"
+          />
+          <h3>Library Databases</h3>
         </div>
         <div>
           <img
             src="static/media/student-profile.png"
             alt=""
-            width="64"
-            height="64"
+            width="40"
+            style="margin-bottom: 5px"
           />
-          <p>Students Portal</p>
+          <h3>Students Portal</h3>
         </div>
         <div>
           <img
             src="static/media/006-sport-centre.png"
             alt=""
-            width="64"
-            height="64"
+            width="40"
+            style="margin-bottom: 5px"
           />
-          <p>Sports</p>
+          <h3>Sports</h3>
         </div>
         <div>
           <img
             src="static/media/planet-earth.png"
             alt=""
-            width="64"
-            height="64"
+            width="40"
+            style="margin-bottom: 5px"
           />
-          <p>International Students</p>
+          <h3>International Students</h3>
         </div>
       </div>
 
       <div class="news">
-        <p>TTU NEWS</p>
-        <h3>Latest News &amp; Events</h3>
+        <div>
+          <h4>TTU NEWS</h4>
+          <h2>Latest News &amp; Events</h2>
+        </div>
+        <div class="news-content">
+          <div>
+            <img src="static/media/news-1.jpg" alt="" height="240" />
+            <p>
+              <span class="fa-regular fa-calendar-check"></span> June 27, 2025
+            </p>
+            <p>TRANSFER NOT A CURSE BUT BLESSING - VC TO ADMINISTRATORS</p>
+          </div>
+          <div>
+            <img src="static/media/news-2.jpg" alt="" height="240" />
+            <p>
+              <span class="fa-regular fa-calendar-check"></span> June 19, 2025
+            </p>
+            <p>CENVAST, TTU CEGENDA HOLD DIALOGUE ON VOLUNTEERISM</p>
+          </div>
+          <div>
+            <img src="static/media/news-3.jpg" alt="" height="240" />
+            <p>
+              <span class="fa-regular fa-calendar-check"></span> June 18, 2025
+            </p>
+            <p>CHANGE YOUR MINDSET FOR SUCCESS - DR. ARHINFUL TO STUDENTS</p>
+          </div>
+          <div>
+            <img src="static/media/news-4.jpg" alt="" height="240" />
+            <p>
+              <span class="fa-regular fa-calendar-check"></span> June 11, 2025
+            </p>
+            <p>100 TTU ENGINEERING STUDENTS RECEIVE CERTIFICATE IN STEIN USE</p>
+          </div>
+        </div>
         <button>READ MORE</button>
       </div>
 
@@ -310,15 +333,13 @@
         </div>
       </div>
 
-      <div>
-        <div>
-          <p>Take A Look At Our</p>
-          <h3>New Faculties</h3>
-        </div>
+      <div class="faculties">
+        <p>Take A Look At Our</p>
+        <h2>New Faculties</h2>
 
-        <div class="faculties">
+        <div>
           <div>
-            <img src="" alt="" />
+            <img src="static/media/doctor.png" alt="" width="50" />
             <h3>Health and Allied Sciences</h3>
             <h4>Pursue Bachelor in:</h4>
             <ol>
@@ -330,7 +351,7 @@
           </div>
 
           <div>
-            <img src="" alt="" />
+            <img src="static/media/wave.png" alt="" width="50" />
             <h3>Maritime and Nautical Studies</h3>
             <h4>Pursue Bachelor in:</h4>
             <ol>
@@ -343,6 +364,119 @@
         </div>
 
         <a href="">View all Programmes</a>
+      </div>
+
+      <div class="campus"></div>
+
+      <div>
+        <div>
+          <p>Staff space</p>
+          <div>
+            <img
+              src="static/media/staff-1.jpg"
+              alt="John Frank Eshun"
+              width="300"
+            />
+            <img
+              src="static/media/staff-2.jpg"
+              alt="Richard Acquaye"
+              width="300"
+            />
+            <img
+              src="static/media/staff-3.jpg"
+              alt="Eric Kwadwo Amissah"
+              width="300"
+            />
+            <img
+              src="static/media/staff-4.jpg"
+              alt="Winfred Adjardjar"
+              width="300"
+            />
+            <img src="static/media/staff-5.jpeg" alt="Ann Dodor" width="300" />
+            <img
+              src="static/media/staff-6.jpeg"
+              alt="Victor Nunfam"
+              width="300"
+            />
+            <img
+              src="static/media/staff-7.jpeg"
+              alt="Francis Ayiah Mensah"
+              width="300"
+            />
+            <img
+              src="static/media/staff-8.jpeg"
+              alt="Abigail Baah-Koranteng"
+              width="300"
+            />
+            <img
+              src="static/media/staff-9.jpeg"
+              alt="Emmanuel Boadi"
+              width="300"
+            />
+            <img
+              src="static/media/staff-10.jpeg"
+              alt="Esther Asafo-Adjei"
+              width="300"
+            />
+          </div>
+        </div>
+        <div>
+          <p>70<sup>th</sup> Anniversary Upcoming Events</p>
+          <img src="static/media/events-70.jpg" alt="" width="300" />
+        </div>
+      </div>
+
+      <div class="collabs">
+        <p>Collaborations</p>
+        <div>
+          <img
+            src="static/media/collab-1.jpeg"
+            alt=""
+            height="100"
+            width="100"
+          />
+          <img
+            src="static/media/collab-2.jpeg"
+            alt=""
+            height="100"
+            width="100"
+          />
+          <img
+            src="static/media/collab-3.gif"
+            alt=""
+            height="100"
+            width="100"
+          />
+          <img
+            src="static/media/collab-4.png"
+            alt=""
+            height="100"
+            width="100"
+          />
+          <img
+            src="static/media/collab-5.jpg"
+            alt=""
+            height="100"
+            width="100"
+          />
+        </div>
+      </div>
+
+      <div>
+        <p>Connect with us</p>
+        <p>On social media</p>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/rAgVkbg_Ot8?si=-J6YgA9eEsX-hnxC"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </main>
 
@@ -368,7 +502,7 @@
           <img
             src="static/media/ttu-logo-white.png"
             alt="Takoradi Technical University"
-            height="50px"
+            height="50"
           />
           <p>
             We are committed to providing you quality technical tertiary

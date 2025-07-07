@@ -10,16 +10,15 @@ video {
 .overlay-text {
   position: absolute;
   color: #fff;
-  background: rgb(0 0 0 / 50%);
+  background: #0007;
   text-align: center;
   top: 0;
   width: 100%;
-  /* height: calc(100% - 7px); */
-  height: 100%;
+  height: calc(100% - 7px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  place-content: center;
+  line-height: 2;
 }
 .service {
   width: 80%;
@@ -36,36 +35,132 @@ video {
   margin-top: -90px;
   background-color: #fff;
 }
+.service div {
+  margin: 20px;
+}
 .service div:hover {
   transition: 0.3s ease;
   transform: translateY(-5px);
 }
+.service h3 {
+  font-family: Monserrat, sans-serif;
+  color: var(--color-blue-deep);
+}
+.news {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+.news > div {
+  margin-bottom: 20px;
+}
+.news h4 {
+  color: var(--color-redish);
+  font-weight: 500px;
+}
+.news h2 {
+  font-family: Montserrat, sans-serif;
+  color: var(--color-blue-deep);
+}
+.news button {
+  padding: 10px 20px;
+  background-color: var(--color-blue-deep);
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid var(--color-blue-deep);
+}
+.news button:hover {
+  background-color: #fff;
+  color: var(--color-blue-deep);
+}
+.news-content {
+  display: flex;
+  justify-content: center;
+  /* width: 60%; */
+  padding: 0 80px;
+  margin: 0 80px;
+  column-gap: 30px;
+  overflow-x: auto;
+}
+.news-content div {
+  width: 240px;
+}
+.news-content p {
+  text-align: left;
+  line-height: 1.5;
+}
 .about {
   display: flex;
-  gap: 20px;
-  background: var(--color-blue-deep);
+  gap: 50px;
+  background-size: cover;
   color: #fff;
+  padding: 50px;
+  justify-content: center;
+  background-image:
+    linear-gradient(#1a337e, #1a337ee6), url(../media/ttu-event-crowd.jpeg);
+  /* linear-gradient(var(--color-blue-deep), var(--color-accent-blue)), */
+  /* url(../media/ttu-event-crowd.jpeg); */
+}
+.about div:nth-child(1) {
+  align-self: center;
+}
+.about div:nth-child(2) {
+  /* width: 600px; */
+  width: 40%;
+}
+.about p {
+  margin: 20px 0;
 }
 .about + div {
   background: var(--color-blue-deep);
   color: #fff;
   display: flex;
+  justify-content: space-around;
+  padding: 30px 10%;
 }
 .about h2,
 .about a {
   color: var(--color-yellow-bright);
   text-decoration: none;
+  margin-top: 20px;
 }
 .faculties {
+  text-align: center;
+  margin: 20px;
+}
+.faculties p {
+  color: var(--color-redish);
+  font-family: "Roboto Slab", sans-serif;
+}
+faculties h2 {
+  color: var(--color-blue-deep);
+  font-family: Montserrat, sans-serif;
+}
+.faculties > div {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.faculties div {
-  border-radius: 3px;
+.faculties > div > div {
+  width: 400px;
   padding: 20px;
-  outline: 0.5px solid #333;
+  /* border-radius: 20px; */
 }
-.faculties div:hover {
-  box-shadow: 0 0 10px #333;
+.faculties > div > div:hover {
+  transition: 0.3s ease;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 25px #0003;
+}
+.faculties button {
+  padding: 10px 20px;
+  background-color: var(--color-blue-deep);
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid var(--color-blue-deep);
+}
+.faculties li {
+  list-style: none;
+}
+.collabs {
+  background-color: var(--color-blue-deep);
 }
