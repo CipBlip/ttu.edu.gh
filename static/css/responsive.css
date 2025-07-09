@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+    .contact-info, nav, .apply-btn {
+        display: none;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about + div {
+        flex-direction: column;
+    }
+    .faculties {
+
+    }
+}

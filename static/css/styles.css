@@ -29,9 +29,8 @@ input {
   display: flex;
   background-color: var(--color-accent-blue);
   justify-content: space-between;
-  padding-inline: 65px;
-  font:
-    12px Montserrat,
+  padding: 3px 65px;
+  font: 12px Montserrat,
     sans-sherif;
   border-bottom: 2px solid var(--color-yellow-bright);
 }
@@ -87,7 +86,6 @@ nav a:hover {
   flex-wrap: wrap;
   flex-direction: column;
   max-height: 350px;
-  /* width: 100%; */
   width: max-content;
   position: absolute;
   background-color: #fff8;
@@ -110,11 +108,14 @@ nav a:hover {
   font-size: 14px;
   padding: 3px 6px;
   font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
+
 }
 .apply-btn:hover {
   color: #fff;
   background: var(--color-blue-deep);
+  transition: 0.3s ease-in-out;
 }
 
 /* Footer Styling */
@@ -129,12 +130,11 @@ footer {
   align-items: center;
   gap: 20px;
   width: 70%;
-  margin: auto;
   padding: 60px 70px;
   position: relative;
   z-index: 1;
   box-shadow: 0 0 7px #000;
-  margin-top: -40px;
+  margin: -90px auto auto;
   background-color: var(--color-blue-deep);
 }
 .newsletter > div {
@@ -148,6 +148,9 @@ footer {
   padding: 7px;
   border-radius: 3px 0 0 3px;
   border: none;
+}
+.newsletter input[type="email"]:focus {
+  outline: none;
 }
 .newsletter button {
   background-color: var(--color-yellow-bright);

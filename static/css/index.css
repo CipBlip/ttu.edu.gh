@@ -18,11 +18,18 @@ video {
   display: flex;
   flex-direction: column;
   place-content: center;
-  line-height: 2;
+}
+.overlay-text h1 {
+  font-family: Montserrat, sans-sherif;
+  margin: 25px 0;
+  font-size: 2rem;
+}
+.overlay-text p {
+  font-size: 1.2rem;
+  margin: 0 0 26px;
 }
 .service {
   width: 80%;
-  margin: auto;
   display: flex;
   gap: 20px;
   justify-content: space-around;
@@ -32,19 +39,20 @@ video {
   padding: 40px 20px;
   position: relative;
   z-index: 1;
-  margin-top: -90px;
+  margin: -90px auto auto;
   background-color: #fff;
 }
 .service div {
   margin: 20px;
 }
 .service div:hover {
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   transform: translateY(-5px);
 }
 .service h3 {
-  font-family: Monserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: var(--color-blue-deep);
+  font-weight: 600;
 }
 .news {
   text-align: center;
@@ -55,7 +63,7 @@ video {
 }
 .news h4 {
   color: var(--color-redish);
-  font-weight: 500px;
+  font-weight: 500;
 }
 .news h2 {
   font-family: Montserrat, sans-serif;
@@ -82,7 +90,7 @@ video {
   overflow-x: auto;
 }
 .news-content div {
-  width: 240px;
+  width: 234px;
 }
 .news-content p {
   text-align: left;
@@ -95,10 +103,7 @@ video {
   color: #fff;
   padding: 50px;
   justify-content: center;
-  background-image:
-    linear-gradient(#1a337e, #1a337ee6), url(../media/ttu-event-crowd.jpeg);
-  /* linear-gradient(var(--color-blue-deep), var(--color-accent-blue)), */
-  /* url(../media/ttu-event-crowd.jpeg); */
+  background-image: linear-gradient(#1a337e, #1a337ee6), url(../media/ttu-event-crowd.jpeg);
 }
 .about div:nth-child(1) {
   align-self: center;
@@ -131,7 +136,7 @@ video {
   color: var(--color-redish);
   font-family: "Roboto Slab", sans-serif;
 }
-faculties h2 {
+.faculties h2 {
   color: var(--color-blue-deep);
   font-family: Montserrat, sans-serif;
 }
