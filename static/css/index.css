@@ -14,7 +14,7 @@ video {
   text-align: center;
   top: 0;
   width: 100%;
-  height: calc(100% - 7px);
+  height: calc(100% - 9px);
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -64,10 +64,13 @@ video {
 .news h4 {
   color: var(--color-redish);
   font-weight: 500;
+  line-height: 28px;
 }
 .news h2 {
   font-family: Montserrat, sans-serif;
-  color: var(--color-blue-deep);
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 35px;
 }
 .news button {
   padding: 10px 20px;
@@ -109,7 +112,7 @@ video {
   align-self: center;
 }
 .about div:nth-child(2) {
-  /* width: 600px; */
+  /*   width: 600px;*/
   width: 40%;
 }
 .about p {
@@ -120,7 +123,7 @@ video {
   color: #fff;
   display: flex;
   justify-content: space-around;
-  padding: 30px 10%;
+  padding: 60px 10%;
 }
 .about h2,
 .about a {
@@ -130,15 +133,16 @@ video {
 }
 .faculties {
   text-align: center;
-  margin: 20px;
+  padding: 65px 50px 20px;
 }
 .faculties p {
   color: var(--color-redish);
   font-family: "Roboto Slab", sans-serif;
 }
 .faculties h2 {
-  color: var(--color-blue-deep);
   font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  margin: 10px 0 26px;
 }
 .faculties > div {
   display: flex;
@@ -148,7 +152,7 @@ video {
 }
 .faculties > div > div {
   width: 400px;
-  padding: 20px;
+  padding: 50px;
   /* border-radius: 20px; */
 }
 .faculties > div > div:hover {
@@ -166,6 +170,36 @@ video {
 .faculties li {
   list-style: none;
 }
+.staff {
+  display: flex;
+}
+.staff-prof h3 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.staff-prof > div {
+  display: flex;
+  width: 461px;
+  overflow-x: auto;
+}
 .collabs {
   background-color: var(--color-blue-deep);
+}
+.collabs h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 40px;
+}
+.collabs > div {
+  display: flex;
+}
+.collabs > div > div {
+  width: 170px;
+  height: 175px;
+}
+.collabs img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }

@@ -162,3 +162,58 @@ form {
   display: flex;
   gap: 0;
 }
+.footer-content {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.footer-about {
+  width: 240px;
+}
+.footer-about p {
+  margin: 26px 0;
+}
+.footer-addr {
+  width: 240px;
+  overflow-x: hidden;
+}
+.footer-addr ul {
+  list-style: none;
+  display: flex;
+}
+.footer-addr a {
+  color: #fff;
+  text-decoration: none;
+}
+#scrollUp {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999; 
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--color-yellow-bright);
+  border-radius: 50%; 
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.footer-links ul{
+  list-style-type: square;
+}
+.footer-links li::marker {
+  color: var(--color-yellow-bright);
+}
+.footer-news ul {
+  display: flex;
+  list-style: none;
+}
+.copyright {
+  padding: 30px;
+  border-top: solid thin var(--color-redish);
+}
