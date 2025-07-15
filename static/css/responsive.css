@@ -1,14 +1,97 @@
 @media screen and (max-width: 768px) {
-    .contact-info, nav, .apply-btn {
-        display: none;
-    }
-    .about {
-        flex-direction: column;
-    }
-    .about + div {
-        flex-direction: column;
-    }
-    .faculties {
+  /* Navigation */
+  nav,
+  .apply-btn {
+    display: none;
+  }
 
-    }
+  /* Top bar */
+  .top-bar {
+    padding: 3px 15px;
+  }
+
+  .top-bar div:nth-child(2) {
+    display: none;
+  }
+
+  .top-bar div {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact-info {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  /* Overlay text responsive styles */
+  .overlay-text h1 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    padding: 0 15px;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+    padding: 0 15px;
+    margin: 0 0 20px;
+  }
+
+  /* Service section responsive styles */
+  .service {
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 15px;
+    margin: 20px auto;
+    border-radius: 12px;
+  }
+
+  .service div {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .service h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+  .service p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+
+  /* About section */
+  .about {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 30px;
+  }
+
+  .about > div {
+    width: 100%;
+  }
+
+  .about + div {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 30px;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  /* General text alignment for mobile */
+  h1, h2, h3, p {
+    text-align: center;
+  }
 }
